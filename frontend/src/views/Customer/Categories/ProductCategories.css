@@ -1,0 +1,149 @@
+.middle {
+    height: 750px;
+    font-family: sans-serif;
+}
+
+.header-middle {
+    height: 60px;
+}
+
+.position {
+    display: flex;
+    border-top: 15px solid white;
+    border-left: 40px solid white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.product-category {
+    height: 60px;
+    position: relative;
+    left: 2%;
+}
+
+.specific-category {
+    background-color: #003366;
+    border-radius: 0 70px 0 0;
+    padding: 10px 20px;
+    color: white;
+    margin-bottom: -2px;
+    width: 40%
+}
+
+.line {
+    display: flex;
+    border-top: 1px solid;
+    border-bottom: 2px solid black;
+    width: 95%;
+}
+
+.total-product {
+    height: 580px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(230px, 1fr));
+    grid-gap: 18px;
+    margin-left: 25px;
+    margin-right: 40px;
+    overflow: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .total-product {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .total-product {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+.product {
+    position: relative;
+    top: 10px;
+    left: 2%;
+    height: 250px;
+    width: 370px;
+    background-color: #D9D9D9;
+    bottom: 10px;
+}
+
+.product-image {
+    display: block;
+    height: 170px;
+    max-width: 100%;
+}
+
+.product-general {
+    height: 30px;
+    background-color: #D9D9D9;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.product-name.h2 {
+    height: 40px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 10px;
+
+}
+
+.contact-button {
+    color: #D01616;
+    border-color: #D01616;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.contact-button:hover::after {
+    transform: scale(3.5);
+    opacity: 1;
+}
+
+
+/* .product-button {
+    background-color: #D01616;
+} */
+.pagination {
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.page-button {
+    background-color: #083cb3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+
+}
+.page-number {
+}

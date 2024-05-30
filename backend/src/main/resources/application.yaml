@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: ISD-Project
+    group: 6
+    author: Thienpv
+#  jpa:
+#      show-sql: true
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/isd_final
+#    username: root
+#    password: 1234
+  data:
+    mongodb:
+#      uri: mongodb+srv://pvtcwd:12345@isd.kml9sfi.mongodb.net/sample_mflix  // db test
+#      database: sample_mflix
+      uri: mongodb+srv://rek3000:thuanlp123@rek.5t3ecg9.mongodb.net/productShowcase
+      database: productShowcase
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              ReactiveMongoTemplate: DEBUG
+              MongoTemplate: DEBUG
+
+server:
+  port: 8888
+  servlet:
+        context-path: /api

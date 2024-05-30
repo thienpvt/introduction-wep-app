@@ -1,0 +1,95 @@
+.header-containerr {
+    background-color: #003366; 
+    border-radius: 0 70px 0 0; 
+    padding: 10px 20px; 
+    color: white; 
+    margin-bottom: -2px; 
+  }
+
+  .header-liner {
+    border-bottom: 3px solid #003366; 
+    height: 0; 
+    width: 100%; 
+  }
+
+
+  .loading-bar {
+    margin-top: 250px;
+    margin-bottom: 250px;
+    margin-left: 50%;
+    position: relative;
+    width: 110px;
+    height: 110px;
+    background: transparent;
+    border: px solid #3c3c3c;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 111px;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #20599b;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px #294cad;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .loading-bar:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 5px solid #20599b;
+    border-right: 5px solid #20599b;
+    border-radius: 50%;
+    animation: animateC 2s linear infinite;
+  }
+  
+  @keyframes animateC {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: rotate(45deg);
+    }
+  
+    100% {
+      transform: rotate(405deg);
+    }
+  }
+  
+
+  /* Detail.css */
+/*  */
+
+/* Detail.css */
+
+
+.carousel-container .carousel-item {
+  
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-container .carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensure the image fits within the container while maintaining its aspect ratio */
+}
+
+.error-message{
+  margin-top: 250px;
+  margin-bottom: 250px;
+}
+
+
