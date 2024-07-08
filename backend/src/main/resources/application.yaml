@@ -11,7 +11,7 @@ spring:
 #    password: 1234
   data:
     mongodb:
-      uri: mongodb+srv://pvtcwd:12345@isd.kml9sfi.mongodb.net/sample_mflix  // db test
+      uri: mongodb+srv://pvtcwd:12345@isd.kml9sfi.mongodb.net/sample_mflix
       database: sample_mflix
 logging:
   level:
