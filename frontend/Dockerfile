@@ -8,7 +8,7 @@ RUN npm install --frozen-lockfile
 COPY . /tmp/
 RUN yarn build
 
-FROM registry.neo.vn/repository/nginx:alpine
+FROM nginx:alpine
 COPY --from=build /tmp/build /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/nginx.conf
 EXPOSE 80 443
